@@ -7,7 +7,7 @@ export const App = () => {
     <main className="login_home">
       {resetPassword ? (
         <>
-          <NewPassword open={resetPassword} onClick={()=> setResetPassword(false)} />
+          <NewPassword open={resetPassword}  />
         </>
       ) : (
         <section className="login_home_assets">

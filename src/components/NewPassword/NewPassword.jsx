@@ -1,5 +1,9 @@
-export const NewPassword = (open, onClick) => {
-  if (open) {
+import { useState } from "react";
+import { App } from "../App/App";
+
+export const NewPassword = (open) => {
+    const [resetPassword, setResetPassword] = useState(open);
+  if (resetPassword) {
     return (
       <section className="reset_password">
         <section className="reset_password_header">
@@ -38,11 +42,14 @@ export const NewPassword = (open, onClick) => {
             <div className="password_butotns">
               <button
                 className="password_autentication_button"
-                onClick={onClick}
+                onClick={() => setResetPassword(false)}
               >
                 Atualizar Senha
               </button>
-              <button className="password_cancel_button" onClick={onClick}>
+              <button
+                className="password_cancel_button"
+                onClick={() => setResetPassword(false)}
+              >
                 Cancelar
               </button>
             </div>
@@ -51,5 +58,7 @@ export const NewPassword = (open, onClick) => {
       </section>
     );
   }
-  return;
+  return(
+    <App />
+  )
 };

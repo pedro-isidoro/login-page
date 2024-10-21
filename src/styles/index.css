@@ -93,22 +93,39 @@
   align-items: center;
 }
 .reset_password_container .password-card {
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 14px;
+  gap: 22px;
 }
 .reset_password_container .password-card input {
   width: 100%;
-  padding: 5px 10px;
+  padding: 12px 8px;
   border-radius: 10px;
   border: 0.1px solid #718096;
+}
+.reset_password_container .password-card input::-moz-placeholder {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.reset_password_container .password-card input::placeholder {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .password-card .password_details {
   width: 100%;
   color: #718096;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: -10px;
+  padding-left: 30px;
+}
+.password-card .password_details li p {
+  font-size: 11.5px;
 }
 
 .password_butotns {
