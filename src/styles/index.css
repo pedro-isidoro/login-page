@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.login_home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #007AF5;
+}
+.login_home .login_home_assets {
+  background: #fff;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assets_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.assets_container img {
+  width: 10%;
+}
+.assets_container input {
+  width: 35%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0.1px solid #718096;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.buttons .autentication, .buttons .forgotten_password {
+  width: 35%;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fff;
+  border: 0.1px solid #007AF5;
+}
+.buttons .autentication:hover, .buttons .forgotten_password:hover {
+  opacity: 75%;
+}
+.buttons .autentication {
+  background: #007AF5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.buttons .autentication .lock_icon {
+  width: 9px;
+}
+
+.reset_password {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.reset_password_header {
+  width: 100%;
+  border-bottom: 0.1rem solid #718096;
+  padding: 5px 10px;
+}
+.reset_password_header img {
+  width: 2.5%;
+}
+
+.reset_password_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reset_password_container .password-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 14px;
+}
+.reset_password_container .password-card input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0.1px solid #718096;
+}
+
+.password-card .password_details {
+  width: 100%;
+  color: #718096;
+}
+
+.password_butotns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.password_butotns .password_autentication_button,
+.password_butotns .password_cancel_button {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fff;
+  border: 0.1px solid #007AF5;
+  font-size: 1.1rem;
+}
+.password_butotns .password_autentication_button:hover,
+.password_butotns .password_cancel_button:hover {
+  opacity: 75%;
+}
+.password_butotns .password_autentication_button {
+  background: #007AF5;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.password_butotns .password_autentication_button .lock_icon {
+  width: 9px;
+}
+.password_butotns .password_cancel_button {
+  color: #007AF5;
+  font-weight: 600;
+}/*# sourceMappingURL=index.css.map */
